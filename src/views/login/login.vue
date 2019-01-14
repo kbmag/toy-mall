@@ -1,8 +1,6 @@
 <template>
   <div class="login">
-    <div class="left">
-      <van-icon name="arrow-left" @click="go" />
-    </div>
+    <mheader></mheader>
     <div class="wx_content">
       <div class="toys_lgImg">
         <img src="../../assets/images/logo.png" alt="">
@@ -32,12 +30,13 @@
 </template>
 
 <script>
+  import mheader from "@/components/common/m-header";
   export default {
     name: "login",
+    components: {
+      mheader
+    },
     methods:{
-      go:function(){
-        this.$router.go(-1);
-      },
       ll:function(){
         alert(222)
       }
@@ -47,16 +46,6 @@
 
 <style lang="less" scoped>
   .login{
-    .left{
-      height:46px;
-      line-height:46px;
-      background:#fff;
-      i{
-        font-size:20px;
-        vertical-align:middle;
-        left:8px;
-      }
-    }
     .wx_content{
       padding:0 27px;
       .toys_lgImg{
