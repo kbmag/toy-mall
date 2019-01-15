@@ -1,15 +1,15 @@
 <template>
   <div class="footer">
-    <div class="item item2" :class="{icon11: footerIndex === 0, icon1: footerIndex !== 0}">首页</div>
-    <div class="item item2" :class="{icon22: footerIndex === 1, icon2: footerIndex !== 1}">找玩具</div>
+    <div class="item item2" :class="{icon11: footerIndex === 0, icon1: footerIndex !== 0}" >首页</div>
+    <div class="item item2" :class="{icon22: footerIndex === 1, icon2: footerIndex !== 1}" >找玩具</div>
     <div class="item item1">
       <div class="outbox">
           <span class="open"></span>
       </div>
       <p class="commit">发布</p>
     </div>
-    <div class="item item2" :class="{icon44: footerIndex === 3, icon4: footerIndex !== 3}">头条</div>
-    <div class="item item2" :class="{icon55: footerIndex === 4, icon5: footerIndex !== 4}">我的</div>
+    <div class="item item2" :class="{icon33: footerIndex === 2, icon3: footerIndex !== 2}">头条</div>
+    <div class="item item2" :class="{icon44: footerIndex === 3, icon4: footerIndex !== 3}">我的</div>
   </div>
 </template>
 
@@ -49,7 +49,8 @@
         background-size:21px;
       }
       &.icon11{
-        background: url('../assets/images/shouye-xuanzhong.png') no-repeat center 25%;
+        color:#0094FB;
+        background:url('../assets/images/shouye-xuanzhong.png') no-repeat center 25%;
         background-size:21px;
       }
       &.icon2{
@@ -57,22 +58,25 @@
         background-size:21px;
       }
       &.icon22{
+        color:#0094FB;
         background: url('../assets/images/zhaowanju-xuanzhong.png') no-repeat center 25%;
         background-size:21px;
       }
-      &.icon4{
+      &.icon3{
         background: url('../assets/images/toutiao.png') no-repeat center 25%;
         background-size:21px;
       }
-      &.icon44{
+      &.icon33{
+        color:#0094FB;
         background: url('../assets/images/toutiao--xuanzhong.png') no-repeat center 25%;
         background-size:21px;
       }
-      &.icon5{
+      &.icon4{
         background: url('../assets/images/wode.png') no-repeat center 25%;
         background-size:21px;
       }
-      &.icon55{
+      &.icon44{
+        color:#0094FB;
         background: url('../assets/images/wode-xuanzhong.png') no-repeat center 25%;
         background-size:21px;
       }
