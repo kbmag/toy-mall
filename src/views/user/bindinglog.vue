@@ -1,6 +1,6 @@
 <template>
   <div class="regist">
-    <mheader :mTitle="'注册'"></mheader>
+    <mheader :mTitle="'绑定'"></mheader>
     <div class="toy-page">
       <div class="input_item">
         <input type="text" placeholder="请输入手机号">
@@ -13,7 +13,7 @@
           </a>
         </span>
       </div>
-      <div class="bm-button">注册</div>
+      <div class="bm-button">绑定并登录</div>
     </div>
     <div class="bottom_xieyi">
       <van-checkbox v-model="checked" checked-color="#4AB4FE">

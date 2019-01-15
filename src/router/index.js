@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import home from '@/views/home'
-import login from '@/views/login/login'
+import login from '@/views/user/login'
 import regist from '@/views/user/regist'
+import phonelogin from '@/views/user/phonelogin'
+import accountlogin from '@/views/user/accountlogin'
+import forgetpassword from '@/views/user/forgetpassword'
+import bindinglog from '@/views/user/bindinglog'
 
 Vue.use(Router)
 
@@ -22,6 +26,26 @@ export default new Router({
       path: '/regist',
       name: 'regist',
       component: regist
+    },
+    {
+      path: '/phonelogin',
+      name: 'phonelogin',
+      component: phonelogin
+    },
+    {
+      path: '/accountlogin',
+      name: 'accountlogin',
+      component: accountlogin
+    },
+    {
+      path: '/forgetpassword',
+      name: 'forgetpassword',
+      component: forgetpassword
+    },
+    {
+      path: '/bindinglog',
+      name: 'bindinglog',
+      component: bindinglog
     }
   ]
 })

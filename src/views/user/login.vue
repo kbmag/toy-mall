@@ -15,25 +15,32 @@
           <i class="icon_qq"></i>
           <div class="txt">QQ登录</div>
         </div>
-        <div class="log_item">
-          <i class="icon_shouji"></i>
-          <div class="txt">手机登录</div>
-        </div>
+        <router-link  to="/phonelogin">
+          <div class="log_item">
+            <i class="icon_shouji"></i>
+            <div class="txt">手机登录</div>
+          </div>
+        </router-link>
+        <router-link  to="/accountlogin">
         <div class="log_item">
           <i class="icon_zhanghao"></i>
           <div class="txt">账号登录</div>
         </div>
+        </router-link>
       </div>
     </div>
-    <router-link to="/regist" tag="div" class="new_reg">新人注册</router-link>
+    <!--<router-link to="/regist" tag="div" class="new_reg">新人注册</router-link>-->
+    <navBottom></navBottom>
   </div>
 </template>
 
 <script>
   import mheader from "@/components/common/m-header";
+  import navBottom from '@/components/navBottom'
   export default {
     name: "login",
     components: {
+      navBottom,
       mheader
     },
     methods:{
