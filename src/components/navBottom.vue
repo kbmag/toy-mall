@@ -1,15 +1,23 @@
 <template>
   <div class="footer">
-    <div class="item item2" :class="{icon11: footerIndex === 0, icon1: footerIndex !== 0}" >首页</div>
-    <div class="item item2" :class="{icon22: footerIndex === 1, icon2: footerIndex !== 1}" >找玩具</div>
+    <router-link tag="div" class="item item2" to="/home">
+      <span class="tab-link">首页</span>
+    </router-link>
+    <router-link tag="div" class="item item2" to="/zwj">
+      <span class="tab-link">找玩具</span>
+    </router-link>
     <div class="item item1">
       <div class="outbox">
-          <span class="open"></span>
+        <span class="open"></span>
       </div>
       <p class="commit">发布</p>
     </div>
-    <div class="item item2" :class="{icon33: footerIndex === 2, icon3: footerIndex !== 2}">头条</div>
-    <div class="item item2" :class="{icon44: footerIndex === 3, icon4: footerIndex !== 3}">我的</div>
+    <router-link tag="div" class="item item2" to="/tt">
+      <span class="tab-link">头条</span>
+    </router-link>
+    <router-link tag="div" class="item item2" to="/login">
+      <span class="tab-link">我的</span>
+    </router-link>
   </div>
 </template>
 
@@ -17,9 +25,10 @@
   export default {
     data(){
       return{
-        footerIndex:'',
+
       }
     },
+
     methods:{
 
     }
@@ -37,6 +46,7 @@
     bottom: 0;
     width: 100%;
     background: #fff;
+    box-shadow:0px 0px 10px rgba(0,0,0,.6);
     .item{
       width: 100%;
       height: 100%;
@@ -44,42 +54,6 @@
       font-size:12px;
       text-align: center;
       text-decoration: none;
-      &.icon1{
-        background: url('../assets/images/shouye.png') no-repeat center 25%;
-        background-size:21px;
-      }
-      &.icon11{
-        color:#0094FB;
-        background:url('../assets/images/shouye-xuanzhong.png') no-repeat center 25%;
-        background-size:21px;
-      }
-      &.icon2{
-        background: url('../assets/images/zhaowanju.png') no-repeat center 25%;
-        background-size:21px;
-      }
-      &.icon22{
-        color:#0094FB;
-        background: url('../assets/images/zhaowanju-xuanzhong.png') no-repeat center 25%;
-        background-size:21px;
-      }
-      &.icon3{
-        background: url('../assets/images/toutiao.png') no-repeat center 25%;
-        background-size:21px;
-      }
-      &.icon33{
-        color:#0094FB;
-        background: url('../assets/images/toutiao--xuanzhong.png') no-repeat center 25%;
-        background-size:21px;
-      }
-      &.icon4{
-        background: url('../assets/images/wode.png') no-repeat center 25%;
-        background-size:21px;
-      }
-      &.icon44{
-        color:#0094FB;
-        background: url('../assets/images/wode-xuanzhong.png') no-repeat center 25%;
-        background-size:21px;
-      }
       .outbox{
         width: 52px;
         height: 52px;
@@ -88,6 +62,7 @@
         margin: 0 auto;
         display: block;
         position: relative;
+        box-shadow:0px 0px 15px rgba(0,0,0,.6);
         .open{
           width:45px;
           height:45px;
@@ -103,6 +78,43 @@
     }
     .item2{
       line-height:75px;
+      &:nth-child(1){
+        background: url('../assets/images/shouye.png') no-repeat center 25%;
+        background-size:21px;
+      }
+      &:nth-child(2){
+        background: url('../assets/images/zhaowanju.png') no-repeat center 25%;
+        background-size:21px;
+      }
+      &:nth-child(4){
+        background: url('../assets/images/toutiao.png') no-repeat center 25%;
+        background-size:21px;
+      }
+      &:nth-child(5){
+        background: url('../assets/images/wode.png') no-repeat center 25%;
+        background-size:21px;
+      }
+      &.router-link-active:nth-child(1){
+        background:url('../assets/images/shouye-xuanzhong.png') no-repeat center 25%;
+        background-size:21px;
+      }
+      &.router-link-active:nth-child(2){
+        background: url('../assets/images/zhaowanju-xuanzhong.png') no-repeat center 25%;
+        background-size:21px;
+      }
+      &.router-link-active:nth-child(4){
+        background: url('../assets/images/toutiao--xuanzhong.png') no-repeat center 25%;
+        background-size:21px;
+      }
+      &.router-link-active:nth-child(5){
+        background: url('../assets/images/wode-xuanzhong.png') no-repeat center 25%;
+        background-size:21px;
+      }
+      &.router-link-active{
+        .tab-link{
+          color:#0094FB;
+        }
+      }
     }
     .item1{
       padding-bottom:27px;

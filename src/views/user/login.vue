@@ -29,18 +29,15 @@
         </router-link>
       </div>
     </div>
-    <!--<router-link to="/regist" tag="div" class="new_reg">新人注册</router-link>-->
-    <navBottom></navBottom>
+    <router-link to="/regist" tag="div" class="new_reg">新人注册</router-link>
   </div>
 </template>
 
 <script>
   import mheader from "@/components/common/m-header";
-  import navBottom from '@/components/navBottom'
   export default {
     name: "login",
     components: {
-      navBottom,
       mheader
     },
     methods:{

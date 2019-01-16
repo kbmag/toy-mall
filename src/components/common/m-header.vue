@@ -1,7 +1,7 @@
 <template>
   <div class="m-header">
     <div class="header">
-      <van-icon name="arrow-left" @click="onClickLeft" />
+      <van-icon name="arrow-left" @click="go" />
     </div>
     <div class="title">{{mTitle}}</div>
   </div>
@@ -22,7 +22,7 @@
       }
     },
     methods:{
-      onClickLeft() {
+      go() {
         this.$router.go(-1)
       },
     }
