@@ -12,7 +12,7 @@
       </div>
       <p class="commit">发布</p>
     </div>
-    <router-link tag="div" class="item item2" to="/tt">
+    <router-link tag="div" class="item item2" to="/tabbar-user">
       <span class="tab-link">头条</span>
     </router-link>
     <router-link tag="div" class="item item2" to="/login">

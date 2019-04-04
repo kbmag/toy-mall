@@ -7,6 +7,7 @@ import phonelogin from '@/views/user/phonelogin'
 import accountlogin from '@/views/user/accountlogin'
 import forgetpassword from '@/views/user/forgetpassword'
 import bindinglog from '@/views/user/bindinglog'
+import tabbaruser from '@/views/user/tabbar-user'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/bindinglog',
       name: 'bindinglog',
       component: bindinglog
+    },
+    {
+      path: '/tabbar-user',
+      name: 'tabbar-user',
+      component: tabbaruser
     }
   ]
 })
