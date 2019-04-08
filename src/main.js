@@ -10,8 +10,9 @@ import '@/assets/reset.css'
 import 'lib-flexible/flexible'
 
 //Vant组件
-import {Toast,Icon,NavBar,Field,Cell,CellGroup,Loading,Button,Checkbox} from 'vant';
+import {Toast,Icon,NavBar,Field,Cell,CellGroup,Loading,Button,Checkbox,Row,Col} from 'vant';
 Vue.use(Toast).use(Icon).use(NavBar).use(Field).use(Cell).use(CellGroup).use(Loading).use(Button).use(Checkbox);
+Vue.use(Row).use(Col);
 
 Vue.config.productionTip = false
 

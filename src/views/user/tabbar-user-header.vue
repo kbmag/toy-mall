@@ -112,7 +112,7 @@
               font-size:14px;
               color:#fff;
               display: inline-block;
-              vertical-align: middle;
+              vertical-align:middle;
             }
           }
         }
