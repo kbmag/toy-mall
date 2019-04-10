@@ -43,6 +43,10 @@
 
 <style scoped lang="less">
   .regist{
+    position: fixed;
+    width:100%;
+    height:100%;
+    background:#fff;
     .toy-page{
       padding:0 27px;
       margin-top:50px;

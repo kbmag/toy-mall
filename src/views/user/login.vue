@@ -50,6 +50,10 @@
 
 <style lang="less" scoped>
   .login{
+    position: fixed;
+    width:100%;
+    height:100%;
+    background:#fff;
     .wx_content{
       padding:0 27px;
       .toys_lgImg{
