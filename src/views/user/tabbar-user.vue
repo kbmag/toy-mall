@@ -4,6 +4,8 @@
     <user-order/>
     <user-tool/>
     <user-barnd/>
+    <user-recom/>
+    <navBottom/>
   </div>
 </template>
 
@@ -12,17 +14,23 @@
   import userOrder from './tabbar-user-order';
   import userTool from './tabbar-user-tool';
   import userBarnd from './tabbar-user-barnd';
+  import userRecom from './tabbar-user-recom';
+  import navBottom from '@/components/navBottom';
   export default {
     name: "user",
     components:{
       userHeader,
       userOrder,
       userTool,
-      userBarnd
+      userBarnd,
+      userRecom,
+      navBottom
     }
   }
 </script>
 
 <style scoped lang="less">
-
+  .tabbar-user{
+    margin-bottom:60px;
+  }
 </style>
